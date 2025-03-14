@@ -1,0 +1,64 @@
+
+body{
+    justify-content: center;
+}
+.login{
+    width: 18em;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: solid 3px #1d2f6f;
+    border-radius: 30px;
+    padding: 12px;
+    margin: 60px;
+    & h1{
+        color: #1d2f6f;
+    }
+    & a{
+        color:#1d2f6f;
+        font-weight: bold;
+        transition: transform 0.5s ease;
+    }
+    & a:hover{
+        transform: scale(1.1);
+    }
+}
+.formulario-login{
+    text-align: justify;
+    justify-content: center;
+    padding: 10px;
+    & form{ 
+        padding: 12px;
+        h2{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        input{
+            text-align: center;
+            border-radius: 30px;
+            border: solid 2px #131b23;
+            padding: 6px;
+            font-size: 16px;
+            margin: 4px;
+        }
+    }
+}
+.botao-login{
+    & button{
+        width: 14vw;
+        padding: 4px;
+        font-size: 16px;
+        background-color: #fefefe;
+        border: solid 1px #131b23;
+        border-radius: 30px;
+        transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+    }
+    & button:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        background-color: #FF914D;
+        color: #fefefe;
+        border: none;
+    }
+}

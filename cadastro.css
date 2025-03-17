@@ -1,0 +1,38 @@
+body{
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+}
+.cadastro_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.cadastro_container div{
+    width: 30%;
+    border: solid 3px #1d2f6f;
+    border-radius: 30px;
+    transition: transform 0.5s ease;
+
+    h2{
+        color: #1d2f6f;
+        font-size: 26px;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        border-radius: 30px;
+        margin: 10px;
+    }
+}
+.cadastro_container div:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #1d2f6f;
+    & h2{
+        color: #fefefe;
+    }
+}

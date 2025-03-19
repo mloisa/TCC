@@ -1,0 +1,197 @@
+/*Banner principal*/
+.banner-principal {
+    background-color: #E9F1F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 88vh;
+    padding: 12px;
+    box-shadow: 8px 4px 8px rgba(22, 22, 22, 0.1);
+    overflow: hidden;
+}
+.banner1-imagem{
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+.banner1-imagem img{
+    height: 500px;
+    margin: 20px;
+}
+.banner1-txt{
+    width: 50%;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    flex-direction: column;
+}
+.banner1-txt h1{
+    color:#FF914D;
+    margin: 10px;
+    font-size: 60px;
+}
+.banner1-txt p{
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.banner-botao{
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+.banner1-txt button{
+    background-color: #1d2f6f;
+    color: #fefefe;
+    border: 0;
+    border-radius: 16px;
+    font-size: 27px;
+    width: 150px;
+    margin-top: 25px;
+    transition: transform 0.5s ease-in, background-color 0.5s ease-in;
+}
+.banner1-txt button:hover{
+    transform: scale(1.1);
+    background-color: #FF914D;
+    cursor: pointer;
+}
+@media (max-width: 999px){
+    .banner-principal{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        height:fit-content;
+    }
+    .banner1-txt{
+        width: 100%;
+    }
+    .banner1-txt h1{
+        font-size: 7.5vw;
+    }
+    .banner1-txt p{
+        font-size: 6vw;
+    }
+    .banner1-txt button{
+        font-size: 5vw;
+        width: 25vw;
+    }
+    .banner1-imagem{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .banner1-imagem img{
+        width: 50vw;
+        height: auto;
+    }
+}
+/*Serviços*/
+.servicos{
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 10px;
+}
+.servico{
+    display: flex;
+    margin: 4px;
+    border: solid 3px black;
+    border-radius: 30px;
+}
+.servico-txt{
+    font-size: 20px;
+    margin: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+.servico-txt h2{
+    font-size: 30px;
+    color: #1d2f6f;
+}
+.servico-button{
+    text-align: center;
+    margin-top: 15px;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+}
+.servico-button button{
+    font-size: 25px;
+    background-color: #fefefe;
+    color: black;
+    border: solid 2px;
+    border-radius: 16px;
+    width: 100px;
+    transition: all 0.5s ease;
+}
+.servico-button button:hover{
+    transform: scale(1.1);
+    background-color: #FF914D;
+    color: #fefefe;
+    cursor: pointer;
+}
+.servico-img{
+    float: right;
+    margin: 10px;
+    img{
+        width: 190px;
+    }
+}
+@media (max-width: 999px){
+    .servicos{
+        flex-direction: column;
+    }
+    .servico{
+        align-self: center;
+        width: 75%
+    }
+    .servico-txt h2{
+        font-size: 5vw;
+    }
+    .servico-img img{
+        width: 30vw;
+        margin-right: 12px;
+    }
+    .servico-button button{
+        font-size: 4vw;
+        width: 12vw;
+        padding: 2px;
+    }
+}
+/*Sobre a empresa*/
+.sobre{
+    justify-self: center;
+    background-color: #1d2f6f;
+    color: #fefefe;
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 40px;
+    width: 80%;
+    display: flex;
+}
+.sobre-txt{
+    text-align: justify;
+    float: left;
+    width: 60%;
+    margin: 20px;
+    margin-right:5px ;
+    margin-bottom: 0px;
+    line-height: 140%;
+}
+.sobre-img{
+    float: right;
+    width: 40%;
+    margin-left: 20px;
+}
+.sobre-img img{
+    float:right;
+    width: 400px;
+    border-radius: 30px;
+}
+

@@ -1,24 +1,30 @@
 
-body{
-    justify-content: center;
+.login-container{
+    justify-items: center;
+    align-items: center;
 }
 .login{
-    width: 18em;
-    text-align: center;
+    margin-top: 100px;
+    height: 550px;
+    width: 340px;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    border: solid 3px #1d2f6f;
+    border: solid 4px #1d2f6f;
     border-radius: 30px;
-    padding: 12px;
-    margin: 60px;
     & h1{
         color: #1d2f6f;
+    }
+    & p{
+        padding: 2px;
     }
     & a{
         color:#1d2f6f;
         font-weight: bold;
         transition: transform 0.5s ease;
+        padding: 2px;
     }
     & a:hover{
         transform: scale(1.1);
@@ -26,33 +32,35 @@ body{
 }
 .formulario-login{
     text-align: justify;
-    justify-content: center;
     padding: 10px;
     & form{ 
-        padding: 12px;
+        padding: 10px;
         h2{
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 500;
+            margin-top: 6px;
+            margin-bottom: 2px;
         }
         input{
             text-align: center;
             border-radius: 30px;
             border: solid 2px #131b23;
             padding: 6px;
-            font-size: 16px;
+            font-size: 18px;
             margin: 4px;
         }
     }
 }
 .botao-login{
     & button{
-        width: 14vw;
+        width: 120px;
         padding: 4px;
-        font-size: 16px;
+        font-size: 18px;
         background-color: #fefefe;
         border: solid 1px #131b23;
         border-radius: 30px;
-        transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+        transition: transform 0.5s ease, background-color 0.5s ease;
+        margin-bottom: 18px;
     }
     & button:hover{
         cursor: pointer;
@@ -61,4 +69,5 @@ body{
         color: #fefefe;
         border: none;
     }
+
 }

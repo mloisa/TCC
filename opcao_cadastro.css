@@ -1,0 +1,48 @@
+.cadastro-container{
+    text-align: center;
+    margin-top: 120px;
+}
+.opcao_container{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+}
+.opcao_container div{
+    box-shadow: rgb(143, 143, 143) 4px 4px 12px 0px;
+    width: 250px;
+    border: solid 3px #1d2f6f;
+    border-radius: 30px;
+    transition: transform 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2{
+        color: #1d2f6f;
+        font-size: 26px;
+    }
+    img{
+        width: 220px;
+        border-radius: 30px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+}
+.opcao_container .cliente{
+    img{
+        margin-top: 40px;
+    }
+}
+.opcao_container div:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #1d2f6f;
+    & h2{
+        color: #fefefe;
+    }
+    img{
+        filter: invert(2) brightness(2);
+    }
+}

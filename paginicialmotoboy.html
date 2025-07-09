@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAP Informática</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="paginicial.css" />
+    <link rel="stylesheet" href="header_footer.css" />
+    <link rel="stylesheet" href="progressbar.css">
+  </head>
+  <body>
+    <!--Barra de navegação-->
+    <header>
+      <nav class="navbar">
+        <h1>Lap Informática</h1>
+        <div class="mobile-menu" onclick="activate()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#Solicitar">Pedir entrega</a></li>
+          <li><a href="index.html">Entregando agora</a></li>
+          <li><a href="#Entregadores">Fale conosco</a></li>
+          <li>
+            <a href="">Sair</a>
+            <img src="Imagens/icons8-logout-50.png" alt="Imagem" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Conteúdo-->
+    <main>
+        <h1>Entregando agora...</h1>
+        <div class="content">
+            <h3>Nome do cliente</h3>
+            <h4>Prazo final:</h4>
+        </div>
+        <div class="container_progress">
+            <div class="steps_progress">
+                <div class="step" id="step1">1</div>
+                <div class="step" id="step2">2</div>
+                <div class="step" id="step3">3</div>
+                <div class="bar_progress"></div>
+            </div>
+        </div>
+      
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118602.30443064963!2d-43.46492315929448!3d-21.72903842151144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c43e1f85da1%3A0x6236b026b3a0a468!2sJuiz%20de%20Fora%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1749426745402!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+   
+    </section>
+    <section id="demandas">
+        <h1>Demandas recentes</h1>
+        <div class="pedido" style="display: block">
+          <img src="" class="pfp_motoboy" alt="Foto" />
+          <h3>Nome do cliente</h3>
+          <h4>Postagem: </h4>
+          <h4>Prazo final:</h4>
+          <h3>R$: 00,00</h3>
+          <div class="opcoes">
+            <button id="aceitar">Aceitar</button>
+            <button id="ocultar">Ocultar</button>
+        </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="hamburgao.js"></script>
+</html>

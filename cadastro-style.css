@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner {
+  width: 50%;
+  img {
+    height: 100%;
+  }
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(150deg, #edf3f9 0%, #d4e1f0 50%, #c3d3e8 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #1d2f6f;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cadastro {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  overflow-y: hidden;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  color: #1d2f6f;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  margin-top: 0;
+  font-size: 1.1rem;
+  gap: 12px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+form input {
+  border: 2px solid #1d2f6f;
+  border-radius: 14px;
+  font-size: 1rem;
+  padding: 10px 16px;
+  width: 300px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #1d2f6f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+form input::placeholder {
+  color: #6c7484;
+  opacity: 0.85;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #ff914d;
+  box-shadow: 0 0 12px rgba(255, 145, 77, 0.3);
+}
+
+.placaefoto {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.placaefoto div {
+  display: flex;
+  flex-direction: column;
+}
+
+.placaefoto input {
+  width: 146px;
+}
+
+#foto {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+}
+
+#labelfoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c91ec;
+  color: #252525;
+  height: 42px;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  padding: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#labelfoto img {
+  height: 26px;
+  margin-right: 6px;
+}
+
+#labelfoto:hover {
+  background-color: #ff914d;
+}
+
+.cadastro button {
+  font-size: 1.2rem;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 16px;
+  background-color: #1d2f6f;
+  color: white;
+  width: 240px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro button:hover {
+  transform: scale(1.05);
+  background-color: #ff914d;
+}
+
+.cadastro button:active {
+  transform: scale(1);
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+/*Responsividade*/
+@media (max-width: 1300px) {
+  .banner img{
+    margin-left: -120px;
+  }
+}
+@media (max-width: 1100px){
+  .banner img{
+    margin-left: -200px;
+  }
+}
+@media (max-width: 1020px) {
+  .banner {
+    display: none;
+  }
+  .cadastro {
+    width: 100%;
+    overflow-y: hidden;
+  }
+  form{
+    width: 60vw;
+      & input{
+        width: 90%;
+      }
+  }
+  button{
+    min-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .cadastro h1{
+    font-size: 2rem;
+  }
+  form{
+    padding: 16px;
+    width: 80vw;
+    & input{
+      width: 90%;
+      padding:8px;
+    }
+  }
+}

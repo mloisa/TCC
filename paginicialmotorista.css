@@ -1,0 +1,38 @@
+.content{
+  background-color: #f2f2f2;
+}
+.progress{
+    max-width: 30px;
+    max-height: 1vh;
+}
+.progress .progress-bar{
+   height: 2px;
+   background-color: #ff914d;
+   animation: progress-animation 6s infinite;
+}
+#opcoes{
+  display: flex;
+  flex-direction: row;
+}
+.pedido .opcoes{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#ocultar{
+  background-color: #f2f2f2;
+  color: #1d2f6f;
+  border: solid 2px #1d2f6f;
+}
+#ocultar:hover{
+  color: #cb6729;
+  border-color: #cc6a2d;
+}
+
+
+@keyframes progress-animation{
+    0% { width: 0%; }
+    
+    100% { width: 100%}
+    
+}

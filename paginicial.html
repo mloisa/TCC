@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAP Informática</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="paginicial.css" />
+    <link rel="stylesheet" href="header_footer.css" />
+  </head>
+  <body>
+    <!--Barra de navegação-->
+    <header>
+      <nav class="navbar">
+        <img id="logo" src="Imagens/Logo.png" alt="Logo">
+        <h1 id="titulo0">Lap Delivery</h1>
+        <div class="mobile-menu" onclick="activate()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#Solicitar">Pedir entrega</a></li>
+          <li><a href="">Entregando agora</a></li>
+          <li><a href="#Entregadores">Fale conosco</a></li>
+          <li>
+            <a href="index.html">Sair
+              <img src="Imagens/icons8-logout-50.png" alt="Imagem" />
+            </a>
+          </li>
+          <img id="logotipo" src="Imagens/Logotipo.png" alt="Logotipo">
+        </ul>
+      </nav>
+    </header>
+
+    <!--Conteúdo-->
+    <main>
+      <div class="content" id="content">
+        <form>
+          <h1 id="titulo">Peça uma entrega!</h1>
+          <input
+            type="text"
+            id="endereco_retirada"
+            placeholder="Endereço de retirada"
+          />
+          <input
+            type="text"
+            id="endereco_destino"
+            placeholder="Endereço do destino"
+          />
+          <h2>Agendar entrega</h2>
+          <div class="data">
+            <input type="date" id="entrega_dia" />
+            <input type="time" id="entrega_hora" />
+          </div>
+          <h2>Prazo final</h2>
+          <div class="data">
+            <input type="date" id="prazo_dia" />
+            <input type="time" id="prazo_hora" />
+          </div>
+          <div id="valor"></div>
+          <button type="button" id="enviar">Confirmar</button>
+        </form>
+      </div>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118602.30443064963!2d-43.46492315929448!3d-21.72903842151144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c43e1f85da1%3A0x6236b026b3a0a468!2sJuiz%20de%20Fora%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1749426745402!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+    <h1 id="titulo2">Por que escolher a LAP Delivery?</h1>
+    <section class="cards_promocionais">
+      <div class="card"><img src="Imagens/carrinho-de-compras.gif" alt="Imagem"><h3>Velocidade</h3>Entregas ágeis, sem enrolação.</div>
+      <div class="card"><img src="Imagens/gostar.gif" alt="Imagem"><h3>Confiança</h3>Você acompanha, a gente garante.</div>
+      <div class="card"><img src="Imagens/localizacao.gif" alt="Imagem"><h3>Praticidade</h3>Um clique, um caminho, uma entrega.</div>
+    </section>
+    <h1 id="titulo3">Entregando agora...</h1>
+    <section class="meus_pedidos">
+      <div class="pedidos displayblock">
+        <div class="sem_pedidos" id="sem_pedidos">
+          <div class="text">
+          <h1>Ops...</h1>
+          Não tem nada aqui... Por enquanto! <br>
+          Tente pedir uma entrega.
+          </div>
+          <img src="Imagens/Motoboycelular.png" alt="">
+        </div>
+        <div class="pedido displaynone" id="pedido">
+          <img src="Imagens/nadaaqui.png" class="pfp_motoboy" alt="Foto" id="foto">
+          <h3>Em espera</h3>
+          <h4>Início: 2025-29-07 10:30:00</h4>
+          <h4>Previsão de entrega: 2025-30-07 11:30:00</h4>
+          <h3>R$: 15,00</h3>
+        </div>
+        
+      </div>
+    </section>
+  </body>
+  <script src="hamburgao.js"></script>
+  <Script src="paginicial.js"></Script>
+</html>

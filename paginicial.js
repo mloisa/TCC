@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function pedido() {
         const agendarHora = document.getElementById("entrega_hora")
         const prazoData = document.getElementById("prazo_dia")
         const prazoHora = document.getElementById("prazo_hora")
+        alert("Pedido cadastrado com sucesso!! Em espera")
         prazoHora.value = ""
         prazoData.value = ""
         agendarHora.value = ""

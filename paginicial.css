@@ -280,8 +280,11 @@ button:active {
   }
 }
 .entregasativas{
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 30px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -289,6 +292,17 @@ button:active {
   h1{
     font-size: 1.8rem;
   }
+}
+.entregasativas .text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.mapa{
+  padding: 20px;
+  
 }
 #motoboyfoto{
   width: 300px;
@@ -307,7 +321,8 @@ button:active {
   }
 }
 .container-etapa{
-  width: 300px;
+  margin: 20px;
+  width: 240px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -323,7 +338,7 @@ button:active {
 }
 .etapa{
   img{
-    height: 40px;
+    height: 36px;
   }
 }
 .barra-interna{
@@ -333,6 +348,18 @@ button:active {
   border-radius: 10px;
   transition: width 1s ease;
 }
+#status_entrega{
+  margin: 10px;
+}
+.prazo{
+  display: flex;
+  text-align: justify;
+  gap: 20px;
+}
+#prazo_final{
+  font-weight: 500;
+  font-size: 1.4rem;
+}
 #opcoes{
   display: flex;
   flex-direction: row;
@@ -341,6 +368,9 @@ button:active {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  button{
+    width: 10rem;
+  }
 }
 #ocultar{
   background-color: #f2f2f2;
@@ -351,7 +381,6 @@ button:active {
   color: #cb6729;
   border-color: #cc6a2d;
 }
-
 
 /*Animações e responsividade*/
 @keyframes fadeIn {
@@ -379,7 +408,7 @@ button:active {
     width: 100%;
   }
   .mapa iframe {
-    height: 300px;
+    max-height: 300px;
   }
   .content form {
     width: 100%;
@@ -402,6 +431,16 @@ button:active {
       height: auto;
     }
   }
+  /*Motorista*/
+  .entregasativas{
+    display: flex;
+    flex-direction: column;
+    max-width: 86vw;
+    button{
+      width: 80%;
+    }
+  }
+
 }
 @media (max-width: 480px) {
   #titulo,
@@ -437,3 +476,11 @@ button:active {
     font-size: 0.95rem;
   }
 }
+
+.displaynone{
+  display: none;
+}
+.displayblock{
+  display: block;
+}
+

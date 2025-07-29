@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAP Informática</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="header_footer.css" />
+    <link rel="stylesheet" href="progressbar.css" />
+    <link rel="stylesheet" href="paginicial.css" />
+  </head>
+  <body>
+    <!--Barra de navegação-->
+    <header>
+      <nav class="navbar">
+        <img id="logo" src="Imagens/Logo.png" alt="Logo" />
+        <h1 id="titulo0">Lap Delivery</h1>
+        <div class="mobile-menu" onclick="activate()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#Solicitar">Pedir entrega</a></li>
+          <li><a href="">Entregando agora</a></li>
+          <li><a href="#Entregadores">Fale conosco</a></li>
+          <li>
+            <a href="index.html"
+              >Sair
+              <img src="Imagens/icons8-logout-50.png" alt="Imagem" />
+            </a>
+          </li>
+          <img id="logotipo" src="Imagens/Logotipo.png" alt="Logotipo" />
+        </ul>
+      </nav>
+    </header>
+
+    <!--Conteúdo-->
+    <main>
+      <div class="conteudo">
+        <div class="sem_entregas displayblock" id="sem_entrega_ativa">
+          <h1>Nenhuma entrega ativa.</h1>
+          Aceite uma entrega para começar!
+          <img src="Imagens/aceite.png" alt="Imagem" />
+        </div>
+        <div class="entregasativas displaynone" id="entregasativas">
+          <div class="text">
+            <h1>Cleide Souza</h1>
+            <div class="prazo">
+            <h2 id="prazo_final">Prazo final:</h2>
+            11:30:00 <br>
+            2025-30-07
+            </div>
+            <div class="container-etapa">
+              <div class="etapa">
+                <img src="Imagens/iconetapacolorido.png" alt="Etapa" />
+              </div>
+              <div class="barra-externa">
+                <div class="barra-interna" id="barra1"></div>
+              </div>
+              <div class="etapa">
+                <img id="etapa2" src="Imagens/iconetapa.png" alt="Etapa" />
+                <img
+                  id="cor1"
+                  src="Imagens/iconetapacolorido.png"
+                  style="display: none"
+                  alt=""
+                />
+              </div>
+              <div class="barra-externa">
+                <div class="barra-interna" id="barra2"></div>
+              </div>
+              <div class="etapa">
+                <img id="etapa3" src="Imagens/iconetapa.png" alt="Etapa" />
+                <img
+                  id="cor2"
+                  src="Imagens/iconetapacolorido.png"
+                  style="display: none"
+                  alt="Etapa"
+                />
+              </div>
+            </div>
+            <p id="status_entrega">
+              Entrega aceita! Aguardando início do transporte...
+            </p>
+            <img id="motoboyfoto" src="Imagens/Motoboycelular.png" alt="" />
+            <button id="botaoprogresso" onclick="progresso()">
+              Iniciar entrega
+            </button>
+          </div>
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118602.30443064963!2d-43.46492315929448!3d-21.72903842151144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c43e1f85da1%3A0x6236b026b3a0a468!2sJuiz%20de%20Fora%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1749426745402!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="mapa"></div>
+      </div>
+    </main>
+    <section id="demandas">
+      <h1>Demandas recentes</h1>
+      <div class="sem_demandas displaynone" id="sem_demandas">
+        Ainda não há demandas. <br />
+        Volte novamente mais tarde. <br />
+        <img src="Imagens/nadaaqui.png" alt="" />
+      </div>
+      <div class="pedido displayblock" id="pedido">
+        <img src="Imagens/cleide_souza.jpg" class="pfp_motoboy" alt="Foto" />
+        <h3>Cleide</h3>
+        <h4>Postagem: 2025-29-07 10:30:00</h4>
+        <h4>Prazo final: 2025-30-07 11:30:00</h4>
+        <h3>R$: 15,00</h3>
+        <div class="opcoes">
+          <button type="button" id="aceitar">Aceitar</button>
+          <button type="button" id="ocultar">Ocultar</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="hamburgao.js"></script>
+  <script src="paginicialmotoboy.js"></script>
+  <script src="barrinha.js"></script>
+</html>
